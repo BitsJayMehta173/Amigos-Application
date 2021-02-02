@@ -4,30 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    >
+    android:gravity="center"
+    tools:context=".MainActivity">
 
 
     <TextView
         android:id="@+id/textDisplay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Lets Find Something Hunty"
+        android:text="@string/lets_find_something_hunty"
         android:paddingStart="20dp"
         android:paddingTop="20dp"
         android:paddingEnd="20dp"
         android:paddingBottom="20dp"
-        android:textSize="20dp" />
+        android:background="#7C7C7C"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btnSearch"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textDisplay"
+        android:layout_below="@id/editTextTextPersonName"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="6dp"
         android:paddingStart="20dp"
         android:paddingTop="20dp"
         android:paddingEnd="20dp"
         android:paddingBottom="20dp"
-        android:text="Search" />
+        android:text="@string/search" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDisplay"
+        android:ems="10"
+        android:hint="@string/enter_location"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:autofillHints="" />
 
 </RelativeLayout>
