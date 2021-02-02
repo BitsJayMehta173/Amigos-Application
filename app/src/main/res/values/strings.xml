@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Amigo Application</string>
     <string name="hello_amigos">Hello Amigos!</string>
+    <string name="lets_find_something_hunty">Lets Find Something Hunty</string>
 </resources>
